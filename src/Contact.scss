@@ -1,0 +1,166 @@
+.contact{
+	height: 100%;
+}
+#footer-cta {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5px;
+	margin: 0;
+              text-align: center;
+}
+#footer-cta h1{
+	font-weight: 1000;
+	font-size: 50px;
+}
+
+
+#startButtonDiv {
+	width: 100%;
+	max-width: 800px;
+	min-width: 300px;
+}
+
+
+.contact-form form{
+	display: flex;
+	justify-content: center;
+}
+.contact-form ul{
+	list-style: none;
+	width: 90%;
+	margin: 0;
+	padding: 0;
+}
+.contact-form li{
+	width: 100%;
+	margin: 10px 0;
+	opacity: 0;
+	animation: fadeInUp 2s 2s;
+	animation-fill-mode: forwards;
+}
+.contact-form li:first-child{
+	display: flex;
+}
+.contact-form li .half{
+	margin-right: 10px;
+}
+.contact-form input[type='text'], 
+.contact-form input[type='email'] {
+	width: 98%;
+	background-color: rgb(188, 188, 231);
+	border: none;
+	font-size: 18px;
+	padding: 10px 7px;
+}
+input:focus{
+	outline: none;
+}
+.contact-form textarea{
+	width: 98%;
+	background-color: rgb(188, 188, 231);
+	border: none;
+	font-size: 18px;
+	padding: 10px 7px;
+	height: 120px;
+}
+textarea:focus{
+	outline: none;
+}
+textarea::placeholder{
+	color: rgb(47, 47, 47);
+}
+input::placeholder{
+	color: rgb(47, 47, 47);
+}
+
+.contact-form input[type='submit']{
+	cursor: pointer;
+	font-size: 20px;
+	border-radius: 5px;
+	border: 1px solid rgb(203, 246, 246);
+	background-color: rgb(188, 188, 231);
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.contact-form input[type='submit']:hover{
+	background-color: white;
+}
+
+
+
+
+#footer {
+	margin-top: 80px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+              text-align: center;
+}
+
+#footer #logo {
+	background-color: rgba(147, 145, 145, 0.91);
+	border-radius: 50%;
+	color: #fff;
+	padding: .4em;
+	font-family: "Maven pro", sans-serif;
+	font-size: 1.6em;
+	font-weight: 500;
+	display: inline;
+}
+
+#footer #copyright {
+	margin-top: 1.6em;
+	font-family: "Maven pro", sans-serif;
+	font-weight: 500;
+}
+
+.footer-cta-title{
+              font-size: 50px;
+}
+
+@media screen and (max-width: 670px) {
+	#footer-cta h1{
+		font-weight: 800;
+		font-size: 30px;
+	}
+	.contact-form li:first-child{	
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.contact-form li:first-child input:first-child {
+		margin-bottom: 10px;	
+	}
+	.contact-form input[type='text'], 
+              .contact-form input[type='email'] {
+	font-size: 15px;
+	padding: 10px 7px;
+              }
+              .contact-form textarea{
+	font-size: 15px;
+	padding: 10px 7px;
+	height: 100px;
+              }
+              .contact-form input[type='submit']{
+	cursor: pointer;
+	font-size: 18px;
+	padding-right: 15px;
+	padding-left: 15px;
+             }
+
+             #footer {
+	padding-top: 30px;
+              text-align: center;
+              }
+             #footer #logo {
+	font-size: 1.3em;
+	}
+	#footer #copyright {
+		margin-top: 1.3em;
+		font-weight: 300;
+		font-size: 15px;
+	}
+             .footer-cta-title{
+              font-size: 35px;
+              }
+}

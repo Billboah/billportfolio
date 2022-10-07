@@ -1,0 +1,156 @@
+@import 'animate.css';
+.home{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;   
+      padding: 0 20px;
+} 
+.description{
+              display: flex;
+              height: auto;
+              flex-direction: column; 
+              justify-content: space-between;   
+              padding-left: 50px;   
+
+              .name-logo img{
+                  height: 120px;
+                  width: 80px;
+                  margin-bottom: -30px;
+                  opacity: 0;
+                  animation: fadeInLeft 1.5s 1.6s forwards;
+              }     
+}
+.description_me{
+              padding-left: 10px;
+              transform: tranlateY(-50);
+              height: 100%;
+}
+.description .name{
+              font-size: 80px;
+              font-weight: 1000;
+              margin: 0px;
+             text-shadow: -5px 5px 5px rgb(143, 143, 214);
+}
+
+.description_me h3{
+      font-size: 20px;
+}
+.description_me .job{
+      font-size: 40px;
+} 
+.home-tools{
+            height: 250px;
+            padding: 10%;
+ }
+.description p{
+      letter-spacing: 3px;
+      animation: fadeIn 1s 1.8s backwards;
+}
+
+.icon_animation{
+      animation-name: spincube;
+      animation-timing-function: ease-in-out ;
+      animation-iteration-count: infinite;
+      animation-duration: 12s;
+      transform-style: preserve-3d;
+      transform-origin: 100px 100px 0;
+      margin-left: calc(50% - 100px);
+
+      div {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 20px 0 lightblue;
+            border: 1px solid gray;
+            background: rgba(99, 99, 166, 0.7);
+      }
+
+}
+.icon_animation img{
+      width: 100px;
+      height: 100px;
+}
+.icon_animation .spin1{
+      transform: translateZ(100px);
+}
+.icon_animation .spin2{
+      transform: rotateY(90deg) translateZ(100px);
+}
+.icon_animation .spin3{
+      transform: rotateX(90deg) rotateY(180deg) translateZ(100px);
+}
+.icon_animation .spin4{
+      transform: rotateZ(90deg) rotateY(180deg) translateZ(100px);
+}
+.icon_animation .spin5{
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+}
+.icon_animation .spin6{
+      transform: rotateY(180deg) rotateX(90deg) translateZ(100px);
+}
+
+@keyframes spincube {
+      from,
+      to{
+            transform: rotateX(0deg) rotateZ(0deg);
+      }
+      16% {
+            transform: rotateX(-90deg) 
+      }
+      33%{
+            transform: rotateX(-90deg) rotateZ(90deg);
+      }
+      50% {
+            transform: rotateX(-180deg) rotateZ(90deg);
+      }
+      66%{
+            transform: rotateX(-270deg) rotateZ(90deg);
+      }
+      83%{
+            transform: rotateX(-90deg) rotateZ(90deg);
+      }
+}
+.lastIcons{
+      display: none;
+}
+
+@media (max-width: 650px){
+      .home{
+            padding: 10px 10px;  
+            min-height: fit-content; 
+      }
+      .description{
+            padding-left:  20px;
+
+            .name-logo img{
+                  height: 80px;
+                  width: 55px; 
+                  margin-bottom: -20px;
+            }     
+}
+      .description .name{
+            font-size: 50px;
+      }
+      .description_me h3{
+            font-size: 15px;
+      }
+      .description_me .job{
+            font-size: 25px;
+      } 
+      .description p{
+            font-size: 10px;
+      }      
+}
+@media  (min-width: 1030px) {
+      .home-content{
+            display: flex;
+            justify-content: space-between;
+      }  
+      .home-tools{
+            width: 300px;
+      }  
+}

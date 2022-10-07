@@ -1,0 +1,129 @@
+.nav{
+              height: 50px;
+              display: flex;
+              background-color: inherit;
+              justify-content: space-between;
+              align-items: center;   
+              margin: 0;
+              padding: 0 50px;
+              position: sticky;
+              top: 0;
+              z-index: 100;
+
+              .theme-button{
+                cursor: pointer;
+                margin-right: 20px;
+              }
+}
+.nav_logo{
+              display: none;
+}
+.nav_small_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sun, .moon{
+  font-size: 20px;
+}
+.dark-theme .nav{
+  background-color: rgb(40, 40, 45);
+  .listA{
+    color: white;
+  }
+  .listA:hover, .listA:active, .listA:focus{
+  color: blue;
+  }
+  .nav_src{
+  background-color:  rgb(29, 29, 32);;
+  }
+  .sun{
+    display: block;
+    color: rgb(226, 226, 226);
+  }
+  .moon{
+    display: none;
+  }
+}
+.light-theme .nav{
+  background-color: rgb(178, 178, 178);
+  .listA{
+    color: rgb(201, 201, 201);
+  }
+  .listA:hover, .listA:active, .listA:focus{
+   color: blue;
+  }
+  .nav_src{
+   background-color:  rgb(48, 48, 60);
+   }
+  .sun{
+    display: none;
+  }
+  .moon{
+    display: block;
+    color: rgb(30, 30, 31)
+  }
+}
+.nav_src{
+  padding: 15px 30px;
+  position: absolute;
+  text-align: right;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 25%;
+  transition: 0.5s ease;
+  z-index: 1;
+  flex-direction: column;
+  padding: 0, 5px;
+}   
+.nav_srcList{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+} 
+.nav_srcList  li{
+  text-align: right;
+} 
+.nav_srcLink {
+  text-align: right;
+  width:  100%;
+  padding: 20px;
+  margin: 0;             
+}
+.nav_small{
+  display: none;
+}
+.small{
+  display: flex;
+}
+.nav_sro{
+  margin-left: 20px;
+}
+
+
+@media screen and (max-width: 670px) {   
+  .nav{
+    height: 40px;
+    padding: 0 30px;
+  }
+  .nav_logo{
+    display: block;
+}
+              .nav_small{
+                            display: block;
+              }
+              .nav_list{
+                            display: none;
+              }
+
+              .listA{
+                font-size: 100%;
+  }
+  .sun, .moon{
+    font-size: 15px;
+  }
+}
