@@ -39,56 +39,58 @@ const Navbar = () => {
             </div>
           )}
           {toggleMenu === true && (
-            <div className="nav_src">
-              <FaTimes
-                size={17}
-                color="white"
-                onClick={() => {
-                  setToggleMenu(false);
-                }}
-              />
-              <ul className="nav_srcList">
-                <li className="nav_srcLink">
-                  <Link
-                    className="listA "
-                    onClick={() => {
-                      setToggleMenu(false);
-                    }}
-                    to="/">
-                    Home
-                  </Link>
-                </li>
-                <li className="nav_srcLink">
-                  <Link
-                    className="listA "
-                    onClick={() => {
-                      setToggleMenu(false);
-                    }}
-                    to="/works">
-                    Works
-                  </Link>
-                </li>
-                <li className="nav_srcLink">
-                  <Link
-                    className="listA "
-                    onClick={() => {
-                      setToggleMenu(false);
-                    }}
-                    to="/about">
-                    About
-                  </Link>
-                </li>
-                <li className="nav_srcLink">
-                  <Link
-                    className="listA "
-                    onClick={() => {
-                      setToggleMenu(false);
-                    }}
-                    to="/contact">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
+            <div className="nav_src_container">
+              <div className="nav_src">
+                <FaTimes
+                  size={17}
+                  color="white"
+                  onClick={() => {
+                    setToggleMenu(false);
+                  }}
+                />
+                <ul className="nav_srcList">
+                  <li className="nav_srcLink">
+                    <Link
+                      className="listA "
+                      onClick={() => {
+                        setToggleMenu(false);
+                      }}
+                      to="/">
+                      Home
+                    </Link>
+                  </li>
+                  <li className="nav_srcLink">
+                    <Link
+                      className="listA "
+                      onClick={() => {
+                        setToggleMenu(false);
+                      }}
+                      to="/works">
+                      Works
+                    </Link>
+                  </li>
+                  <li className="nav_srcLink">
+                    <Link
+                      className="listA "
+                      onClick={() => {
+                        setToggleMenu(false);
+                      }}
+                      to="/about">
+                      About
+                    </Link>
+                  </li>
+                  <li className="nav_srcLink">
+                    <Link
+                      className="listA "
+                      onClick={() => {
+                        setToggleMenu(false);
+                      }}
+                      to="/contact">
+                      Contact
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           )}
         </div>

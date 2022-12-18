@@ -4,7 +4,10 @@
       flex-direction: column;
       justify-content: center;
       height: 100%;   
-      padding: 0 20px;
+      position: absolute;
+      top: 0;
+      padding: 50px 20px;
+      width: 100%;
 } 
 .description{
               display: flex;

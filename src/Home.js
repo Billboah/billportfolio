@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './Home.scss';
 import { FaCss3, FaGitAlt, FaHtml5, FaJs, FaReact } from 'react-icons/fa';
 import AnimationLetters from './animations';
-import Loader from 'react-loaders';
 import tailwind from './assets/tailwind.png';
 import Logo1 from './assets/logo/logo1.png';
 
@@ -24,6 +23,7 @@ const Home = () => {
   return (
     <div className="body">
       <div className="container">
+        <img src={Logo1} alt="" className="background-logo" />
         <div className="home">
           <div className="home-content">
             <div className="description">
@@ -74,9 +74,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <img src={Logo1} alt="" className="background-logo" />
       </div>
-      <Loader type="pacman" />
     </div>
   );
 };

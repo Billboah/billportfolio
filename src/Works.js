@@ -6,7 +6,6 @@ import clock from './assets/work/clock.png';
 import myclock from './assets/work/myclock.png';
 import uber from './assets/work/uber.png';
 import weather from './assets/work/weather.png';
-import Loader from 'react-loaders';
 import Logo1 from './assets/logo/logo1.png';
 
 const Works = () => {
@@ -24,6 +23,7 @@ const Works = () => {
   return (
     <div className="body">
       <div className="container">
+        <img src={Logo1} alt="" className="background-logo" />
         <div className="work1">
           <h2 className="text-center">
             <span className={`${letterClass}`}>W</span>
@@ -246,9 +246,7 @@ const Works = () => {
             </div>
           </div>
         </div>
-        <img src={Logo1} alt="" className="background-logo" />
       </div>
-      <Loader type="pacman" />
     </div>
   );
 };

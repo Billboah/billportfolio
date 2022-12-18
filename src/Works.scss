@@ -1,9 +1,13 @@
 .work1 {
+  min-height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 90px;
+  position: absolute;
+  top: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .work1::-webkit-scrollbar{
   display: none;
@@ -128,7 +132,8 @@ article {
 
 @media (max-width: 850px) {
   .work1 {
-    padding: 0 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   }
   .works {
     height: 250px;
@@ -138,13 +143,15 @@ article {
 
 @media (max-width: 1300px) {
   .work1 {
-    padding: 0 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
 @media (max-width: 650px) {
   .work1 {
-    padding: 0 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .works {
     height: 200px;
@@ -158,7 +165,8 @@ article {
 
 @media (max-width: 300px) {
   .work1 {
-    padding: 0 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .works {
     height: 100px;

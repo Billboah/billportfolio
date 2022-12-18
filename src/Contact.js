@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Contact.scss';
 import emailjs from '@emailjs/browser';
-import Loader from 'react-loaders';
 import Logo1 from './assets/logo/logo1.png';
 
 const Services = () => {
@@ -34,6 +33,7 @@ const Services = () => {
   return (
     <div className="body">
       <div className="container">
+        <img src={Logo1} alt="" className="background-logo" />
         <div className="contact">
           <section id="footer-cta">
             <h1>
@@ -77,9 +77,7 @@ const Services = () => {
             </div>
           </footer>
         </div>
-        <img src={Logo1} alt="" className="background-logo" />
       </div>
-      <Loader type="pacman" />
     </div>
   );
 };

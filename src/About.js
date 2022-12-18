@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Loader from 'react-loaders';
 import './About.scss';
 import profile from './assets/profile.jpeg';
 import Logo1 from './assets/logo/logo1.png';
@@ -19,6 +18,7 @@ const About = () => {
   return (
     <div className="body">
       <div className="container">
+        <img src={Logo1} alt="" className="background-logo" />
         <div className="about">
           <div className="about-content">
             <div>
@@ -40,9 +40,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <img src={Logo1} alt="" className="background-logo" />
       </div>
-      <Loader type="pacman" />
     </div>
   );
 };
