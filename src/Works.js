@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Works.scss';
-import amazon from './assets/work/amazon.jpeg';
+import amazon from './assets/work/amazon.png';
 import beatbox from './assets/work/beatbox.png';
 import clock from './assets/work/clock.png';
 import myclock from './assets/work/myclock.png';
@@ -57,7 +57,9 @@ const Works = () => {
                       <p className="works-description">
                         Fully functioning frontend-end amazon clone. I has three pages, home page,
                         checkout page and log in page. It is highly responsive and give user best
-                        experience.
+                        experience. User can search product, add product to cart, remove from cart,
+                        and the total price of items added to cart will be calculated and display
+                        for the user.
                       </p>
                     </div>
                   </article>
